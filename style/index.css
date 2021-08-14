@@ -221,7 +221,7 @@ header {
 }
 
 .bg-body {
-  background-image: url('/images/bg7.jpg');
+  background-image: url('../images/bg7.jpg');
   background-size: cover;
   border-top: 5px solid rgba(82, 119, 158, 0.5);
 }
