@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <div class="bg-main">
+        <header>
+            <section id="nav-header" class="nav">
+                <div class="nav-nav">
+                    <a class = "logo-nav" href="./index.html">
+                        <h2 class="logo">Tim's Hub</h2>
+                    </a>
+                    <ul class="nav-menu" id="nav-menu">
+                        <a href="./index.html" class="nav-link">Home</a>
+                        <a href="index.html#mywork" class="nav-link">Work</a>
+                        <a href="./profile.html" class="nav-link">Profile</a>
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                        <a href="javascript:void(0);" class="nav-menuicon" onclick="myFunction()">
+                            <img class="icon" src="./images/menu-icon.jpg" alt="">
+                        </a>
+                    </ul>
+                    <div id="toggle" class="toggle"></div>
+                </div>
+
+            </section>
+            <div class="nav-res">
+                <ul class="nav-res_list" id="navres">
+                    <li class="nav-res_item"><a href="./index.html" class="nav-res_link">Home</a></li>
+                    <li class="nav-res_item"><a href="index.html#mywork" class="nav-res_link">Work</a></li>
+                    <li class="nav-res_item"><a href="./profile.html" class="nav-res_link">Profile</a></li>
+                    <li class="nav-res_item"><a href="./contact.html" class="nav-res_link">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- BODY -->
+    
+        <section class="getintouch">
+            <div class="aboutme-bg" data-aos="fade-in">
+                <div class="aboutme">
+                    <div class="aboutme-info aboutme-color">
+                        <h2 class="aboutme__title">Get in <br> <span class="aboutme__touch">touch</span></h2>
+                        <p class="aboutme__desc">
+                            If you think I am worth a show, just send me a message by filling the form below. I wil send my reply to you as soon as I can. 
+                             <br><br>
+                            Thank you for stopping by!
+                        </p>
+                    </div>
+                    <div class="aboutme-info">
+                        <img class="aboutme__img" src="./images/callme.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="contact-section" data-aos="fade-right">
+                <div class="contact-form">
+                    <div class="form">
+                        <div class="form-info">
+                            <label class="form-title" for="first-name">First Name</label>
+                            <div class="form-space">
+                                <input id="first-name" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-info">
+                            <label class="form-title" for="last-name">Last Name</label>
+                            <div class="form-space">
+                                <input id="last-name" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-info">
+                            <label class="form-title" for="email">Email</label>
+                            <div class="form-space">
+                                <input id="email" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-info">
+                            <label class="form-title" for="phone">Phone</label>
+                            <div class="form-space">
+                                <input id="phone" type="text" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-message">
+                        <label class="form-title" for="subject">Subject</label>
+                        <div class="form-space">
+                            <input id="subject" type="text" placeholder="">
+                        </div>
+                        <label class="form-title" for="message">Message</label>
+                        <div class="form-space">
+                            <input id="message" type="text" placeholder="">
+                        </div>
+                        <button class="submit">
+                            <a class="submit-link" href="" onclick="alert('Thank you. I will reply to you asap!')" class="">Submit</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer data-aos="slide-down">
+            <div class="foot">
+                <div class="contact">
+                    <div class="contact-info">
+                        <h3 class="contact-info_title">You can contact me via:</h3>
+                        <p class="contact-info_address"></p>
+                        <p class="contact-info_no">Tel: +8497-165-2548</p>
+                        <p class="contact-info_mail">Email: thinhpt.sp@gmail.com</p>
+                    </div>
+                    <div class="contact-me">
+                        <h3 class="contact-me_call">Leave me a message.</h3>
+                        <button class="contact-me_btn">
+                            <a class="contact-me_link" href="./contact.html">Click Here</a>
+                        </button>
+                        <ul class="contact-social">
+                            <li><a class="contact-social_link" onclick="alert('Oops, this is currently not available!')" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="contact-social_link" onclick="alert('Oops, this is currently not available!')" href=""><i class="fa fa-youtube"></i></a></li>
+                            <li><a class="contact-social_link" onclick="alert('Oops, this is currently not available!')" href=""><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2021 by Tim Fung</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="./js/contact.js"></script>
+</body>
+</html>

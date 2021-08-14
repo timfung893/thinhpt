@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/profile.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <div class="bg-main">
+        <header>
+            <section id="nav-header" class="nav">
+                <div class="nav-nav">
+                    <a class = "logo-nav" href="./index.html">
+                        <h2 class="logo">Tim's Hub</h2>
+                    </a>
+                    <ul class="nav-menu" id="nav-menu">
+                        <a href="./index.html" class="nav-link">Home</a>
+                        <a href="index.html#mywork" id="scroll-work" class="nav-link">Work</a>
+                        <a href="./profile.html" class="nav-link">Profile</a>
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                        <a href="javascript:void(0);" class="nav-menuicon" onclick="myFunction()">
+                            <img class="icon" src="./images/menu-icon.jpg" alt="">
+                        </a>
+                    </ul>
+                    <div id="toggle" class="toggle"></div>
+                </div>
+
+            </section>
+            <div class="nav-res">
+                <ul class="nav-res_list" id="navres">
+                    <li class="nav-res_item"><a href="./index.html" class="nav-res_link">Home</a></li>
+                    <li class="nav-res_item"><a href="index.html#mywork" class="nav-res_link">Work</a></li>
+                    <li class="nav-res_item"><a href="./profile.html" class="nav-res_link">Profile</a></li>
+                    <li class="nav-res_item"><a href="./contact.html" class="nav-res_link">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- BODY -->
+    
+        <section class="profile">
+            <div class="aboutme-bg" data-aos="fade-in">
+                <div class="aboutme">
+                    <div class="aboutme-info aboutme-color">
+                        <h2 class="aboutme__title">Profile</h2>
+                        <p class="aboutme__desc">
+                            This is Tim. I started my career as a salaryman for a media company in Vietnam. After a few years, it came to me that I wasn’t meant to be there. “This isn’t for me”, I thought to myself. And, to my surprise, that is also the moment when I developed an interest in web developing. <br><br>
+                            Currently, I am familiar with HTML, CSS, and Javascript. And, despite my  experience is not that impressive, that doesn’t stop me from improving myself each day. <br><br>I am trying to expand and develop my career. Being in the comfortable zone is somewhat relaxing, but it is not a place to be. And, of course, I have to make a move quickly before I miss my chances. Fighting!
+                            
+                        </p>
+                    </div>
+                    <div class="aboutme-info">
+                        <img class="aboutme__img" src="./images/DSCF0572.JPG" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="expert-title" data-aos="slide-up">Expertise</div>
+            <div class="expert" data-aos="slide-up">
+                <h3 class="expert-desc">HTML, CSS, Javascripts, <br> Bootstrap, React, Testing/Debugging.</h3>
+                <div class="expert-icon">
+                    <img src="./images/html5.png" alt="">
+                    <img src="./images/css.png" alt="">
+                    <img src="./images/js.png" alt="">
+                    <img src="./images/react.png" alt="">
+                </div>
+            </div>
+            <div class="exp-info">
+                <h2 class="exp-title" data-aos="fade-in">Experience</h2>
+                <div class="exp" data-aos="zoom-out-down">
+                    <div class="exp-desc">
+                        <h3 class="exp-desc_time">2016 - 2019</h3>
+                        <h4>Translator</h4>
+                        <p class="exp-desc_work">I worked as a translator for Dien Quan Media, dealing with film subtitling, translating materials.</p>
+                    </div>
+                    <div class="exp-desc">
+                        <h3 class="exp-desc_time">2019 - 2020</h3>
+                        <h4>Front-End Content Writer</h4>
+                        <p class="exp-desc_work">I wrote the content for the website of Havi Technology, an ERP company. Check it out at <a href="https://havi.com.au/">Havi.com.au.</a></p>
+                    </div>
+                    <div class="exp-desc">
+                        <h3 class="exp-desc_time">2021 - Present</h3>
+                        <h4>Front-End Trainee Developer</h4>
+                        <p class="exp-desc_work">Currently learning front-end web development and seeking new opportunities.  </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer data-aos="slide-down">
+            <div class="foot">
+                <div class="contact">
+                    <div class="contact-info">
+                        <h3 class="contact-info_title">You can contact me via:</h3>
+                        <p class="contact-info_address"></p>
+                        <p class="contact-info_no">Tel: +8497-165-2548</p>
+                        <p class="contact-info_mail">Email: thinhpt.sp@gmail.com</p>
+                    </div>
+                    <div class="contact-me">
+                        <h3 class="contact-me_call">Leave me a message.</h3>
+                        <button class="contact-me_btn">
+                            <a class="contact-me_link" href="./contact.html">Click Here</a>
+                        </button>
+                        <ul class="contact-social">
+                            <li><a class="contact-social_link" onclick="alert('Oops, this is currently not available!')" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="contact-social_link" onclick="alert('Oops, this is currently not available!')" href=""><i class="fa fa-youtube"></i></a></li>
+                            <li><a class="contact-social_link" onclick="alert('Oops, this is currently not available!')" href=""><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2021 by Tim Fung</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="./js/profile.js"></script>
+</body>
+</html>

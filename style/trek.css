@@ -1,0 +1,824 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.owl-carousel,
+#owl-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+.owl-nav,
+#owl-nav {
+  width: 40px;
+}
+.owl-prev, .owl-next,
+#owl-prev,
+#owl-next {
+  border: none;
+}
+
+.owl-prev:hover,
+.owl-next:hover,
+#owl-next:hover,
+#owl-prev:hover {
+  background: #aa9b77;
+  border: #aa9b77;
+}
+
+.cover {
+  position: relative;
+  background-image: url('../images/trekking.jpg');
+  background-size: cover;
+  height: 790px;
+  width: 100%;
+}
+
+.navbar {
+  padding-top: 30px;
+  background-color: transparent !important;
+}
+.navbar-branch {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-left: 45px;
+}
+.navbar-toggler {
+  float: right;
+}
+
+.cart {
+  position: relative;
+}
+.cart img {
+  position: absolute;
+  top: 25%;
+}
+
+.ml-auto, .mx-auto {
+  margin-right: 65px !important;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+.nav-link:hover {
+  color: #a5ecec !important;
+}
+.nav-item {
+  margin-left: 40px;
+}
+
+.motto {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-size: 60px;
+}
+
+.desc {
+  color: #8d9eaf;
+  font-size: 20px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.iconcov {
+  position: absolute;
+  font-size: 35px;
+  top: 90%;
+  left: 50%;
+  height: 2rem;
+  transform: translateX(-50%);
+}
+
+.iconcover {
+  color: #7c7e81;
+}
+
+.scroll {
+  background-color: transparent;
+  border: none;
+}
+.scroll:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #acb9ae;
+  transition: 0.3s;
+}
+.scroll:not(:hover) {
+  outline: none;
+}
+
+.checkbtn {
+  color: black;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.see-all {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #aa9b77;
+  border: none;
+  color: #fff;
+  transition: .4s;
+}
+.see-all:hover {
+  color:aqua;
+  opacity: .8;
+  cursor: pointer;
+}
+.see-all:not(:hover) {
+  outline: none;
+}
+
+span .chksquare {
+  font-family: "FontAwesome";
+}
+span .chkcolor {
+  position: relative;
+  margin: 0 5px;
+}
+
+.square {
+  position: absolute;
+  opacity: 0;
+  height: 20px;
+  width: 22px;
+  cursor: pointer;
+}
+.square:hover {
+  border: 1px solid #444d4d;
+  cursor: pointer;
+}
+
+.square + span.chksquare::after {
+  content: "";
+  margin-right: 5px;
+  color: #aa9b77;
+}
+
+.square:checked + span.chksquare::after {
+  content: "";
+  color: #aa9b77;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.line {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 85px;
+}
+.line::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #aa9b77;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.line-text {
+  display: inline-block;
+  background-color: #fff;
+  padding: 1.5rem;
+  padding-left: 0;
+  position: relative;
+  z-index: 2;
+}
+.line-women {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 85px;
+  text-align: right;
+}
+.line-women::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: flex;
+  background-color: #aa9b77;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.line-text-women {
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  padding-right: 0;
+  z-index: 2;
+}
+
+.chkcolor {
+  margin-left: 20px;
+}
+
+.carousel {
+  position: absolute;
+  margin: 0;
+}
+.carousel-men {
+  position: absolute;
+  left: 96%;
+}
+.carousel-page, .carousel-men-page {
+  margin: 0;
+}
+.carousel-page {
+  float: left;
+}
+.carousel-men-page {
+  float: right;
+}
+
+.color-pink {
+  position: absolute;
+  right: 50%;
+}
+.color-toggle {
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.size {
+  position: absolute;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+}
+.size:hover {
+  text-decoration: none;
+  color: #1e9292;
+}
+.size-toggle {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.toggle {
+  display: inline-block;
+  border: none;
+  background-color: #165eb9;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.color2 {
+  background-color: #ffe637;
+}
+
+.color3 {
+  background-color: #535253;
+}
+
+.color1 {
+  background-color: #d3a7ac;
+}
+
+.owl-carousel, #owl-carousel {
+  display: block;
+}
+.owl-backward, .owl-forward, #owl-backward, #owl-forward {
+  border: none;
+}
+.owl-nav, .owl-dots, #owl-nav, #owl-dots {
+  display: none;
+}
+.owl-nav-1, .owl-nav-2, #owl-nav-1, #owl-nav-2 {
+  position: relative;
+  z-index: 2;
+}
+.owl-backward:hover, .owl-forward:hover, #owl-backward:hover, #owl-forward:hover {
+  background-color: #aa9b77;
+}
+.owl-backward:not(:hover), .owl-forward:not(:hover), #owl-backward:not(:hover), #owl-forward:not(:hover) {
+  background-color: #dddddd;
+  outline: none;
+}
+
+.category-list {
+  display: flex !important;
+  margin: 0 auto;
+  margin-top: 85px;
+}
+.category-item {
+  background-color: #e6dbdb;
+  height: 25rem;
+  padding: 28px;
+}
+.category-item:hover {
+  border: 8px solid #aa9b77;
+  transition: 0.3s;
+}
+.category-image {
+  width: 50% !important;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+.category-type {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #aa9b77;
+}
+.category-details {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+.category-price {
+  position: absolute;
+  right: 0;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+
+.foot {
+  background-color: #aa9b77;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 25rem;
+  margin-top: 10rem;
+}
+
+.aboutus {
+  margin-left: 0;
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  text-align: center;
+  outline: 2px solid #837659;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.aboutus-title {
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  background-color: #aa9b77;
+  color: #837659;
+  margin: 0;
+  padding: 0 20px;
+  transform: translateX(-50%);
+}
+.aboutus-desc {
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  padding-left: 120px;
+  padding-right: 120px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.e-commerce {
+  background-color: #535253;
+  margin: 0;
+  padding: 10px;
+}
+
+.ecommerce-desc {
+  color: white;
+  font-weight: 600;
+  margin: 0;
+}
+
+.twitter {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.trekking {
+  align-items: center;
+  background-color: #424242;
+  height: 40vh;
+  margin: 0;
+  position: relative;
+  color: #fff;
+}
+.trekking-footer {
+  display: block;
+  width: 50%;
+  margin: 0;
+  padding-left: 40px;
+}
+.trekking-desc {
+  padding-top: 20px;
+  margin: 0;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.trekking-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.credit {
+  position: relative;
+  height: 5vh;
+  width: 50%;
+  margin: 0;
+  right: 3%;
+}
+.credit-nav {
+  position: absolute;
+  right: 0;
+  margin: 0;
+}
+.credit-nav-list {
+  text-decoration: none;
+  list-style: none;
+}
+.credit-nav-item {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.credit-nav-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  transition: color 0.25s linear, border 0.25s linear;
+}
+.credit-nav-link:hover {
+  text-decoration: none;
+  color: aquamarine;
+}
+
+.credit-design {
+  align-items: center;
+}
+
+.design {
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.vertical {
+  border-right: 1px solid #aa9b77;
+  padding: 0 6px;
+}
+
+.nonvertical {
+  padding: 0 6px;
+}
+
+@media screen and (min-width: 1280px) {
+  .row {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .title {
+    width: 70%;
+    height: 3rem;
+    margin: 15px auto;
+    font-size: 50px;
+  }
+
+  #mobile-menu {
+    display: none;
+  }
+
+  #owl-nav-1 {
+    width: 3rem;
+  }
+
+  .category-item {
+    margin-bottom: 50px;
+  }
+
+  .category-list {
+    flex-wrap: nowrap;
+  }
+
+  .trekking {
+    height: 20vh;
+  }
+
+  .foot {
+    margin-top: 5rem;
+  }
+
+  .aboutus {
+    height: 60%;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .motto {
+    margin: 0;
+  }
+
+  .title {
+    width: 70%;
+    height: 5rem;
+    white-space: normal;
+    margin: 0 auto;
+    font-size: 40px;
+  }
+
+  .navbar-branch {
+    padding-left: 40px;
+  }
+
+  .desc {
+    width: 40%;
+    font-size: 18px;
+    word-wrap: break-word;
+  }
+
+  .carousel {
+    left: 0%;
+  }
+  .carousel-page, .carousel-men-page {
+    margin: 0;
+  }
+  .carousel-men {
+    position: absolute;
+    left: 95%;
+  }
+
+  #owl-nav-1 {
+    width: 3rem;
+  }
+
+  .category-item {
+    margin-bottom: 1.2rem;
+  }
+
+  .aboutus {
+    width: 80%;
+    height: 150px;
+    font-size: 16px;
+  }
+  .aboutus-desc {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cart img {
+    margin: 10px 0;
+  }
+
+  .motto {
+    height: 10rem;
+    top: 45%;
+  }
+
+  .navbar-nav {
+    width: 15%;
+  }
+  .navbar-toggler {
+    padding-right: 15px;
+  }
+  .navbar-branch {
+    padding-left: 15px;
+  }
+
+  .title {
+    font-size: 40px;
+    margin-bottom: 2rem;
+  }
+
+  .desc {
+    width: 50%;
+    font-size: 1.2rem;
+  }
+
+  .carousel {
+    left: 0%;
+  }
+  .carousel-page, .carousel-men-page {
+    margin: 0;
+  }
+  .carousel-men {
+    position: absolute;
+    left: 91%;
+  }
+
+  #owl-nav-1 {
+    width: 3rem;
+  }
+
+  .trekking {
+    height: 35vh;
+  }
+
+  .credit-nav-list {
+    flex-wrap: nowrap;
+  }
+  .credit-nav-link {
+    font-size: 12px;
+  }
+
+  .aboutus {
+    height: 10rem;
+  }
+  .aboutus-title {
+    font-size: 22px;
+  }
+  .aboutus-desc {
+    font-size: 14px;
+  }
+
+  .design {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 419px) {
+  .owl-carousel.owl-loaded {
+    display: inline-block !important;
+  }
+
+  .is-transitioned {
+    width: 1970px;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.25s ease 0s;
+  }
+
+  .navbar-toggler {
+    padding-right: 15px;
+  }
+  .navbar-branch {
+    padding-left: 15px;
+  }
+
+  .owl-item {
+    transition: all 0.6s ease;
+  }
+
+  .navbar-nav {
+    width: 10%;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 35px;
+    word-wrap: break-word;
+    margin-bottom: 2rem;
+  }
+
+  .desc {
+    width: 50%;
+    font-size: 15px;
+  }
+
+  .foot {
+    margin-top: 60px;
+  }
+
+  .aboutus {
+    width: 80%;
+    height: 250px;
+    font-size: 12px;
+    margin: 0;
+  }
+  .aboutus-desc {
+    padding: 40px 40px;
+  }
+  .aboutus-title {
+    font-size: 20px;
+    left: 50%;
+  }
+
+  .carousel {
+    left: 0%;
+  }
+  .carousel-page, .carousel-men-page {
+    margin: 0;
+  }
+  .carousel-men {
+    position: absolute;
+    left: 88%;
+  }
+
+  #owl-nav-1 {
+    width: 3rem;
+  }
+
+  .line {
+    margin-top: 65px;
+  }
+  .line-text {
+    padding-right: 10px;
+  }
+  .line-women {
+    margin-top: 60px;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+  .line-women::before {
+    left: 0%;
+  }
+  .line-text-women {
+    right: -6%;
+  }
+
+  .category-list {
+    flex-wrap: nowrap;
+  }
+  .category-item {
+    width: 384px !important;
+    margin: 0 auto;
+  }
+
+  .e-commerce {
+    position: relative;
+  }
+
+  .ecommerce-desc {
+    position: absolute;
+    font-size: 12px;
+    top: 35%;
+    left: 15%;
+  }
+
+  .trekking {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 35vh;
+  }
+  .trekking-footer {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 0 auto;
+  }
+
+  .credit {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding: 20px 20px;
+  }
+  .credit-nav {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+  .credit-nav-list {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .design {
+    position: inherit;
+    display: block;
+    font-size: 14px;
+    margin-top: 20px;
+    left: 3%;
+  }
+}
+
+/*# sourceMappingURL=css.css.map */

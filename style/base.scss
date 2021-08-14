@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  height: 755px;
+}
+
+$blue: rgba(13, 66, 102, 0.7);
+$themecolor: rgba(114, 114, 218, 1);
+$blue: rgb(53, 115, 165);
+$boxcolor: rgba(47, 106, 173, 0.8);
+$section-title-color:rgba(117, 171, 238, 0.7);
+
+@mixin centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
