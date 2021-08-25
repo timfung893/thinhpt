@@ -11,14 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="container header__inner">
+            <div class="container header__inner active">
                 <a href="play.html" class="logo">
                     <span class="logo_text">Play</span>ground
                 </a>
+                
                 <nav class="header__menu">
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
@@ -35,7 +37,28 @@
                         </li> 
                     </ul>
                 </nav>
+
+                <div class="toggle"></div>
             </div>
+            <div class="menu">
+                <nav class="menu-res">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="" class="menu-link">Event</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-link">Pricing</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-link">Blog</a>
+                        </li>
+                        <li class="menu-item menu-login">
+                            <a href="" class="menu-link menu-link-login">Log in</a>
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
+            
         </header> 
     </div>
     <section class="banner">
@@ -236,5 +259,6 @@
             </div>
         </div>
     </section>
+    <script type="text/javascript" src="./js/play.js"></script>
 </body>
 </html>

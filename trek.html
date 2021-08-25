@@ -17,305 +17,314 @@
 
 <body>
     <!--HEADER  -->
-    <div class="container">
-        <div class="cover">
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
-                <button type="button" class="navbar-branch" onclick="window.location.href='product.html'">
-                    <img src="./images/shoe.png" height="40">
-                </button>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Products</a>
-                        </li>
-                        <a class="nav-item cart" href="">
-                            <img src="./images/cart.png" alt="">
-                        </a>
-                    </ul>
-                </div> 
-            </nav>
-            <div class="motto row text-center">
-                <div class="col-12">
-                    <h1 class="title">Our clothing , your comfort</h1>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, neque quisquam, quam optio repudiandae .</p>
+    <section class="header-banner">
+        <div class="container">
+            <div class="cover">
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <button type="button" class="navbar-branch" onclick="window.location.href='product.html'">
+                        <img src="./images/shoe.png" height="40">
+                    </button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Products</a>
+                            </li>
+                            <a class="nav-item cart" href="">
+                                <img src="./images/cart.png" alt="">
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="motto row text-center">
+                    <div class="col-12">
+                        <h1 class="title">Our clothing , your comfort</h1>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, neque quisquam, quam optio repudiandae .</p>
+                    </div>
                 </div>
             </div>
-        </div>   
-        <div class="iconcov">
-            <button type="button" class="scroll"><i class="fa fa-chevron-down iconcover"></i></button>
+            <div class="iconcov">
+                <button type="button" class="scroll"><i class="fa fa-chevron-down iconcover"></i></button>
+            </div>
         </div>
-    </div>
+    </section>
     <!-- BODY -->
     <!-- CHECKBOXES -->
-    <div class="container-fluid">
-        <div class="row text-center">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 checkbtn">
-                <form>
-                    <span class="chkcolor">
-                        <input type="checkbox" class="square" id="gender1" name="Men" value="Men">       
-                        <span class="chksquare"> </span>
-                        <label for="gender1">MEN</label>
-                    </span>
-                    <span class="chkcolor">
-                        <input type="checkbox" class="square" id="gender2" name="Women" value="Women">       
-                        <span class="chksquare"> </span>
-                        <label for="gender2">WOMEN</label>
-                    </span>
-                    <span class="chkcolor">
-                        <input type="checkbox" class="square" id="gender3" name="Children" value="Children">       
-                        <span class="chksquare"> </span>
-                        <label for="gender3">CHILDREN</label>
-                    </span>
-                </form>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                <button class="see-all" type="button">SEE ALL PRODUCTS</button>    
+    <section class="checkboxes">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 checkbtn">
+                    <form>
+                        <span class="chkcolor">
+                            <input type="checkbox" class="square" id="gender1" name="Men" value="Men">
+                            <span class="chksquare"> </span>
+                            <label for="gender1">MEN</label>
+                        </span>
+                        <span class="chkcolor">
+                            <input type="checkbox" class="square" id="gender2" name="Women" value="Women">
+                            <span class="chksquare"> </span>
+                            <label for="gender2">WOMEN</label>
+                        </span>
+                        <span class="chkcolor">
+                            <input type="checkbox" class="square" id="gender3" name="Children" value="Children">
+                            <span class="chksquare"> </span>
+                            <label for="gender3">CHILDREN</label>
+                        </span>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <button class="see-all" type="button">SEE ALL PRODUCTS</button>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- MEN -->
 
-    <div class="container">
-        <div class="line"><span class="line-text">MEN</span>
-            <div class="carousel-men">
-                <div id="page" class="carousel-men-page"></div>
-                <div id="owl-nav-1">
-                    <button type="button" role="presentation" class="owl-backward">
-                        <i class="fa fa-angle-left"></i>
-                    </button>
-                    <button type="button" role="presentation" class="owl-forward">
-                        <i class="fa fa-angle-right"></i>
-                    </button>
+    <section class="men-products">
+        <div class="container">
+            <div class="line"><span class="line-text">MEN</span>
+                <div class="carousel-men">
+                    <div id="page" class="carousel-men-page"></div>
+                    <div id="owl-nav-1">
+                        <button type="button" role="presentation" class="owl-backward">
+                            <i class="fa fa-angle-left"></i>
+                        </button>
+                        <button type="button" role="presentation" class="owl-forward">
+                            <i class="fa fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="owl-1" class="men owl-carousel">
+                <div class="owl-stage category-list text-center">
+                    <div class="owl-item category-item">
+                        <div class="size-toggle row">
+                            <a href="#" class="size color">
+                                SIZE <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <div class="color-toggle">
+                                <button class="color1 toggle" id="toggle1" type="button">
+                                    <a href="#"></a>
+                                </button>
+                                <button class="color2 toggle" id="toggle1" type="button">
+                                    <a href="#"></a>
+                                </button>
+                                <button class="color3 toggle" id="toggle1" type="button">
+                                    <a href="#"></a>
+                                </button>
+                            </div>
+                            <img src="./images/shirt.png" class="category-image" alt="">
+                            <div class="category-details row">
+                                <h4 class="category-type">T-SHIRT</h4>
+                                <h4 class="category-price">5,00$</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item category-item">
+                        <div class="size-toggle row">
+                            <a href="" class="size">
+                                SIZE <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <img src="./images/pant.png" class="category-image" alt="">
+                            <div class="category-details row">
+                                <h4 class="category-type">PANT</h4>
+                                <h4 class="category-price">5,00$</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item category-item">
+                        <div class="size-toggle row">
+                            <a href="" class="size">
+                                SIZE <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <img src="./images/backpack.png" class="category-image" alt="">
+                            <div class="category-details row">
+                                <h4 class="category-type">BACKPACK</h4>
+                                <h4 class="category-price">5,00$</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item category-item">
+                        <div class="size-toggle row">
+                            <a href="" class="size">
+                                SIZE <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <img src="./images/backpack.png" class="category-image" alt="">
+                            <div class="category-details row">
+                                <h4 class="category-type">BACKPACK</h4>
+                                <h4 class="category-price">5,00$</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item category-item">
+                        <div class="size-toggle row">
+                            <a href="" class="size">
+                                SIZE <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <img src="./images/backpack.png" class="category-image" alt="">
+                            <div class="category-details row">
+                                <h4 class="category-type">BACKPACK</h4>
+                                <h4 class="category-price">5,00$</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div id="owl-1" class="men owl-carousel">
-            <div class="owl-stage category-list text-center">
-                <div class="owl-item category-item">
-                    <div class="size-toggle row">
-                        <a href="#" class="size color">
-                            SIZE <i class="fa fa-chevron-down"></i>
-                        </a>
-                        <div class="color-toggle">
-                            <button class="color1 toggle" id="toggle1" type="button">
-                                <a href="#"></a>
-                            </button>
-                            <button class="color2 toggle" id="toggle1" type="button">
-                                <a href="#"></a>
-                            </button>
-                            <button class="color3 toggle" id="toggle1" type="button">
-                                <a href="#"></a>
-                            </button>
-                        </div>
-                        <img src="./images/shirt.png" class="category-image" alt="">
-                        <div class="category-details row">
-                            <h4 class="category-type">T-SHIRT</h4>
-                            <h4 class="category-price">5,00$</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-item category-item">
-                    <div class="size-toggle row">
-                        <a href="" class="size">
-                            SIZE <i class="fa fa-chevron-down"></i>
-                        </a>
-                        <img src="./images/pant.png" class="category-image" alt="">
-                        <div class="category-details row">
-                            <h4 class="category-type">PANT</h4>
-                            <h4 class="category-price">5,00$</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-item category-item">
-                    <div class="size-toggle row">
-                        <a href="" class="size">
-                            SIZE <i class="fa fa-chevron-down"></i>
-                        </a>
-                        <img src="./images/backpack.png" class="category-image" alt="">
-                        <div class="category-details row">
-                            <h4 class="category-type">BACKPACK</h4>
-                            <h4 class="category-price">5,00$</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-item category-item">
-                    <div class="size-toggle row">
-                        <a href="" class="size">
-                            SIZE <i class="fa fa-chevron-down"></i>
-                        </a>
-                        <img src="./images/backpack.png" class="category-image" alt="">
-                        <div class="category-details row">
-                            <h4 class="category-type">BACKPACK</h4>
-                            <h4 class="category-price">5,00$</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-item category-item">
-                    <div class="size-toggle row">
-                        <a href="" class="size">
-                            SIZE <i class="fa fa-chevron-down"></i>
-                        </a>
-                        <img src="./images/backpack.png" class="category-image" alt="">
-                        <div class="category-details row">
-                            <h4 class="category-type">BACKPACK</h4>
-                            <h4 class="category-price">5,00$</h4>
-                        </div>
-                    </div>
-                </div>   
-            </div>
-        </div>
+    </section>
 
         <!-- WOMEN -->
 
-        <div class="line-women"><span class="line-text-women">WOMEN</span>
-            <div class="carousel">
-                <div id="page" class="carousel-page"></div>
-                <div id="owl-nav-2">
-                    <button type="button" role="presentation" id="owl-backward">
-                        <i class="fa fa-angle-left"></i>
-                    </button>
-                    <button type="button" role="presentation" id="owl-forward">
-                        <i class="fa fa-angle-right"></i>
-                    </button>
+    <section class="women-products">
+        <div class="container">
+            <div class="line-women"><span class="line-text-women">WOMEN</span>
+                <div class="carousel">
+                    <div id="page" class="carousel-page"></div>
+                    <div id="owl-nav-2">
+                        <button type="button" role="presentation" id="owl-backward">
+                            <i class="fa fa-angle-left"></i>
+                        </button>
+                        <button type="button" role="presentation" id="owl-forward">
+                            <i class="fa fa-angle-right"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="owl-2" class="women owl-carousel">
-            <div class="owl-stage category-list">
-                <div class="owl-item category-item">
-                    <div class="size-toggle row">
-                        <a href="" class="size">
-                            SIZE <i class="fa fa-chevron-down"></i>
-                        </a>
-                        <img src="./images/jacket.png" class="category-image" alt="">
-                        <div class="category-details row">
-                            <h4 class="category-type">JACKET</h4>
-                            <h4 class="category-price">5,00$</h4>
+            <div id="owl-2" class="women owl-carousel">
+                <div class="owl-stage category-list">
+                    <div class="owl-item category-item">
+                        <div class="size-toggle row">
+                            <a href="" class="size">
+                                SIZE <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <img src="./images/jacket.png" class="category-image" alt="">
+                            <div class="category-details row">
+                                <h4 class="category-type">JACKET</h4>
+                                <h4 class="category-price">5,00$</h4>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="owl-item category-item">
-                    <div class="size-toggle row">
-                        <a href="" class="size">
-                            SIZE <i class="fa fa-chevron-down"></i>
-                        </a>
-                        <img src="./images/trekkingshoe.png" class="category-image" alt="">
-                        <div class="category-details row">
-                            <h4 class="category-type">SHOES</h4>
-                            <h4 class="category-price">5,00$</h4>
+                    <div class="owl-item category-item">
+                        <div class="size-toggle row">
+                            <a href="" class="size">
+                                SIZE <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <img src="./images/trekkingshoe.png" class="category-image" alt="">
+                            <div class="category-details row">
+                                <h4 class="category-type">SHOES</h4>
+                                <h4 class="category-price">5,00$</h4>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="owl-item category-item">
-                    <div class="size-toggle row">
-                        <a href="" class="size">
-                            SIZE <i class="fa fa-chevron-down"></i>
-                        </a>
-                        <div class="color-toggle">
-                            <button class="color1 toggle color-pink" id="toggle1" type="button">
-                                <a href="#"></a>
-                            </button>
-                        </div>
-                        <img src="./images/tshirt.png" class="category-image" alt="">
-                        <div class="category-details row">
-                            <h4 class="category-type">T-SHIRT</h4>
-                            <h4 class="category-price">5,00$</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-item category-item">
-                    <div class="size-toggle row">
-                        <a href="" class="size">
-                            SIZE <i class="fa fa-chevron-down"></i>
-                        </a>
-                        <div class="color-toggle">
-                            <button class="color1 toggle color-pink" id="toggle1" type="button">
-                                <a href="#"></a>
-                            </button>
-                        </div>
-                        <img src="./images/tshirt.png" class="category-image" alt="">
-                        <div class="category-details row">
-                            <h4 class="category-type">T-SHIRT</h4>
-                            <h4 class="category-price">5,00$</h4>
+                    <div class="owl-item category-item">
+                        <div class="size-toggle row">
+                            <a href="" class="size">
+                                SIZE <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <div class="color-toggle">
+                                <button class="color1 toggle color-pink" id="toggle1" type="button">
+                                    <a href="#"></a>
+                                </button>
+                            </div>
+                            <img src="./images/tshirt.png" class="category-image" alt="">
+                            <div class="category-details row">
+                                <h4 class="category-type">T-SHIRT</h4>
+                                <h4 class="category-price">5,00$</h4>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="owl-item category-item">
-                    <div class="size-toggle row">
-                        <a href="" class="size">
-                            SIZE <i class="fa fa-chevron-down"></i>
-                        </a>
-                        <div class="color-toggle">
-                            <button class="color1 toggle color-pink" id="toggle1" type="button">
-                                <a href="#"></a>
-                            </button>
+                    <div class="owl-item category-item">
+                        <div class="size-toggle row">
+                            <a href="" class="size">
+                                SIZE <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <div class="color-toggle">
+                                <button class="color1 toggle color-pink" id="toggle1" type="button">
+                                    <a href="#"></a>
+                                </button>
+                            </div>
+                            <img src="./images/tshirt.png" class="category-image" alt="">
+                            <div class="category-details row">
+                                <h4 class="category-type">T-SHIRT</h4>
+                                <h4 class="category-price">5,00$</h4>
+                            </div>
                         </div>
-                        <img src="./images/tshirt.png" class="category-image" alt="">
-                        <div class="category-details row">
-                            <h4 class="category-type">T-SHIRT</h4>
-                            <h4 class="category-price">5,00$</h4>
+                    </div>
+                    <div class="owl-item category-item">
+                        <div class="size-toggle row">
+                            <a href="" class="size">
+                                SIZE <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <div class="color-toggle">
+                                <button class="color1 toggle color-pink" id="toggle1" type="button">
+                                    <a href="#"></a>
+                                </button>
+                            </div>
+                            <img src="./images/tshirt.png" class="category-image" alt="">
+                            <div class="category-details row">
+                                <h4 class="category-type">T-SHIRT</h4>
+                                <h4 class="category-price">5,00$</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+</section>
     <!-- FOOTER -->
 
-<footer class="footer">
-    <div class="foot">
-        <div class="aboutus text-center">
-            <h3 class="aboutus-title">ABOUT US</h3>
-            <p class="aboutus-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore modi suscipit facere reiciendis vel molestiae necessitatibus soluta quam, inventore minima ducimus incidunt. Placeat, eveniet!</p>
+<section class="footer">
+    <footer class="container">
+        <div class="foot">
+            <div class="aboutus text-center">
+                <h3 class="aboutus-title">ABOUT US</h3>
+                <p class="aboutus-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore modi suscipit facere reiciendis vel molestiae necessitatibus soluta quam, inventore minima ducimus incidunt. Placeat, eveniet!</p>
+            </div>
         </div>
-    </div>
-    <div class="e-commerce row">
-        <button class="twitter" onclick="window.location.href='product.html'">
-        <img class="twitter-image" src="./images/fa-twitter.png" alt="">
-        </button>
-        <p class="ecommerce-desc">" E-commerce psd theme available "</p>
-    </div>
-    <div class="trekking row">
-        <div class="trekking-footer col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <h3 class="trekking-title">TREKKING</h3>
-            <p class="trekking-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cum aliquam dolor enim dignissimos sed libero cumque ea sunt quaeratsed libero cumque ea sunt quaeratsed libero cumque ea sunt quaerat!</p>
+        <div class="e-commerce row">
+            <button class="twitter" onclick="window.location.href='product.html'">
+            <img class="twitter-image" src="./images/fa-twitter.png" alt="">
+            </button>
+            <p class="ecommerce-desc">" E-commerce psd theme available "</p>
         </div>
-        <div class="credit col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <nav class="credit-nav">
-                <ul class="credit-nav-list row">
-                    <li class="credit-nav-item">
-                        <a href="" class="credit-nav-link"><span class="vertical">CREDITS</span></a>
-                    </li>
-                    <li class="credit-nav-item">
-                        <a href="" class="credit-nav-link"><span class="vertical">PRIVACY</span></a>
-                    </li>
-                    <li class="credit-nav-item">
-                        <a href="" class="credit-nav-link"><span class="vertical">ABOUT</span></a>
-                    </li>
-                    <li class="credit-nav-item">
-                        <a href="" class="credit-nav-link"><span class="nonvertical">CONTACT</span></a>
-                    </li>  
-                </ul>
-            </nav>
-            <p class="design">Designed by gianluca cosetta</p>
+        <div class="trekking row">
+            <div class="trekking-footer col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h3 class="trekking-title">TREKKING</h3>
+                <p class="trekking-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cum aliquam dolor enim dignissimos sed libero cumque ea sunt quaeratsed libero cumque ea sunt quaeratsed libero cumque ea sunt quaerat!</p>
+            </div>
+            <div class="credit col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <nav class="credit-nav">
+                    <ul class="credit-nav-list row">
+                        <li class="credit-nav-item">
+                            <a href="" class="credit-nav-link"><span class="vertical">CREDITS</span></a>
+                        </li>
+                        <li class="credit-nav-item">
+                            <a href="" class="credit-nav-link"><span class="vertical">PRIVACY</span></a>
+                        </li>
+                        <li class="credit-nav-item">
+                            <a href="" class="credit-nav-link"><span class="vertical">ABOUT</span></a>
+                        </li>
+                        <li class="credit-nav-item">
+                            <a href="" class="credit-nav-link"><span class="nonvertical">CONTACT</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="design">Designed by gianluca cosetta</p>
+            </div>
         </div>
-    </div>
-
+    </footer>
+</section>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/trek.js"></script>
-
-</footer>
-</div>
 </body>
 </html>
      
