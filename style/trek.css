@@ -18,7 +18,8 @@ body {
 #owl-nav {
   width: 40px;
 }
-.owl-prev, .owl-next,
+.owl-prev,
+.owl-next,
 #owl-prev,
 #owl-next {
   border: none;
@@ -34,7 +35,7 @@ body {
 
 .cover {
   position: relative;
-  background-image: url('../images/trekking.jpg');
+  background-image: url("../images/trekking.jpg");
   background-size: cover;
   height: 790px;
   width: 100%;
@@ -62,7 +63,8 @@ body {
   top: 25%;
 }
 
-.ml-auto, .mx-auto {
+.ml-auto,
+.mx-auto {
   margin-right: 65px !important;
 }
 
@@ -136,11 +138,11 @@ body {
   background-color: #aa9b77;
   border: none;
   color: #fff;
-  transition: .4s;
+  transition: 0.4s;
 }
 .see-all:hover {
-  color:aqua;
-  opacity: .8;
+  color: aqua;
+  opacity: 0.8;
   cursor: pointer;
 }
 .see-all:not(:hover) {
@@ -246,7 +248,8 @@ span .chkcolor {
   position: absolute;
   left: 96%;
 }
-.carousel-page, .carousel-men-page {
+.carousel-page,
+.carousel-men-page {
   margin: 0;
 }
 .carousel-page {
@@ -309,23 +312,39 @@ span .chkcolor {
   background-color: #d3a7ac;
 }
 
-.owl-carousel, #owl-carousel {
+.owl-carousel,
+#owl-carousel {
   display: block;
 }
-.owl-backward, .owl-forward, #owl-backward, #owl-forward {
+.owl-backward,
+.owl-forward,
+#owl-backward,
+#owl-forward {
   border: none;
 }
-.owl-nav, .owl-dots, #owl-nav, #owl-dots {
+.owl-nav,
+.owl-dots,
+#owl-nav,
+#owl-dots {
   display: none;
 }
-.owl-nav-1, .owl-nav-2, #owl-nav-1, #owl-nav-2 {
+.owl-nav-1,
+.owl-nav-2,
+#owl-nav-1,
+#owl-nav-2 {
   position: relative;
   z-index: 2;
 }
-.owl-backward:hover, .owl-forward:hover, #owl-backward:hover, #owl-forward:hover {
+.owl-backward:hover,
+.owl-forward:hover,
+#owl-backward:hover,
+#owl-forward:hover {
   background-color: #aa9b77;
 }
-.owl-backward:not(:hover), .owl-forward:not(:hover), #owl-backward:not(:hover), #owl-forward:not(:hover) {
+.owl-backward:not(:hover),
+.owl-forward:not(:hover),
+#owl-backward:not(:hover),
+#owl-forward:not(:hover) {
   background-color: #dddddd;
   outline: none;
 }
@@ -517,8 +536,8 @@ span .chkcolor {
 }
 @media screen and (max-width: 1279px) {
   .title {
+    position: relative;
     width: 70%;
-    height: 3rem;
     margin: 15px auto;
     font-size: 50px;
   }
@@ -559,7 +578,6 @@ span .chkcolor {
 
   .title {
     width: 70%;
-    height: 5rem;
     white-space: normal;
     margin: 0 auto;
     font-size: 40px;
@@ -578,7 +596,8 @@ span .chkcolor {
   .carousel {
     left: 0%;
   }
-  .carousel-page, .carousel-men-page {
+  .carousel-page,
+  .carousel-men-page {
     margin: 0;
   }
   .carousel-men {
@@ -636,7 +655,8 @@ span .chkcolor {
   .carousel {
     left: 0%;
   }
-  .carousel-page, .carousel-men-page {
+  .carousel-page,
+  .carousel-men-page {
     margin: 0;
   }
   .carousel-men {
@@ -732,7 +752,8 @@ span .chkcolor {
   .carousel {
     left: 0%;
   }
-  .carousel-page, .carousel-men-page {
+  .carousel-page,
+  .carousel-men-page {
     margin: 0;
   }
   .carousel-men {
