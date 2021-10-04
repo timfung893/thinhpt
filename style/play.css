@@ -611,13 +611,21 @@ i {
   }
   .menu-item {
     list-style: none;
+<<<<<<< HEAD
     margin-bottom: 4rem;
+=======
+    margin-bottom: 2rem;
+>>>>>>> 76d44229c4e84282b344d1b08b18fe94ca85dcc0
   }
   .menu-link {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
+<<<<<<< HEAD
     font-size: 3.5rem;
+=======
+    font-size: 2.5rem;
+>>>>>>> 76d44229c4e84282b344d1b08b18fe94ca85dcc0
     transition: 0.4s;
   }
   .menu-link:hover {
