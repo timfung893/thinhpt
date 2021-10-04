@@ -1,137 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
-    
+  </head>
+  <body>
     <!-- HEADER -->
 
     <header>
-        <section id="bg-header" class="bg">
-            <div class="bg-nav">
-                <a class= "bg-logo" href="./index.html">
-                    <h2 class="logo">Tim's Hub</h2>
-                </a>
-                <div id="toggle" class="toggle"></div>
-            </div>
-            <video src="./images/bg-blue.mp4" muted loop autoplay></video>
-            <div class="overlay"></div>
-            <div class="motto" data-aos="zoom-in">
-                <h2 class="motto-title">TIM FUNG</h2>
-                <h3 class="motto-title2">WEB DEVELOPER</h3>
-                <p class="motto-text">Currently, I’m seeking new opportunities regarding front-end web development, content writing, and more. </p>
-                <button class="motto-btn">
-                    <a href="./contact.html">Contact Me</a>
-                </button>
-            </div>
-            <ul class="social">
-                <li><a class="social-link" onclick="alert('Oops, this is currently not available!')" href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a class="social-link" onclick="alert('Oops, this is currently not available!')" href=""><i class="fa fa-youtube"></i></a></li>
-                <li><a class="social-link" onclick="alert('Oops, this is currently not available!')" href=""><i class="fa fa-instagram"></i></a></li>
-            </ul>
-        </section>
-        <div class="menu">
-            <ul>
-                <li class="menu-item"><a href="./index.html" class="menu-link">Home</a></li>
-                <li class="menu-item"><a href="#" id ="scroll-work" class="menu-link">Work</a></li>
-                <li class="menu-item"><a href="./profile.html" class="menu-link">Profile</a></li>
-                <li class="menu-item"><a href="./contact.html" class="menu-link">Contact</a></li>
-            </ul>
+      <section id="bg-header" class="bg">
+        <div class="bg-nav">
+          <a class="bg-logo" href="./index.html">
+            <h2 class="logo">Tim's Hub</h2>
+          </a>
+          <div id="toggle" class="toggle"></div>
         </div>
-        <button class="scroll">
-            <i class="fa fa-chevron-down scroll-icon"></i>
-        </button>
+        <video src="./images/bg-blue.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="motto" data-aos="zoom-in">
+          <h2 class="motto-title">TIM FUNG</h2>
+          <h3 class="motto-title2">WEB DEVELOPER</h3>
+          <p class="motto-text">
+            Currently, I’m seeking new opportunities regarding front-end web
+            development, content writing, and more.
+          </p>
+          <button class="motto-btn">
+            <a href="./contact.html">Contact Me</a>
+          </button>
+        </div>
+        <ul class="social">
+          <li>
+            <a
+              class="social-link"
+              onclick="alert('Oops, this is currently not available!')"
+              href="#"
+              ><i class="fa fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="social-link"
+              onclick="alert('Oops, this is currently not available!')"
+              href=""
+              ><i class="fa fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="social-link"
+              onclick="alert('Oops, this is currently not available!')"
+              href=""
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <div class="menu">
+        <ul>
+          <li class="menu-item">
+            <a href="./index.html" class="menu-link">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" id="scroll-work" class="menu-link">Work</a>
+          </li>
+          <li class="menu-item">
+            <a href="./profile.html" class="menu-link">Profile</a>
+          </li>
+          <li class="menu-item">
+            <a href="./contact.html" class="menu-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <button class="scroll">
+        <i class="fa fa-chevron-down scroll-icon"></i>
+      </button>
     </header>
+
     <!-- BODY -->
+
     <section class="bg-body">
-        <div class="body">
-            <div class="aboutme-bg">
-                <div class="aboutme">
-                    <div class="aboutme-info aboutme-color">
-                        <h2 class="aboutme__title">Hi, I'm Tim</h2>
-                        <p class="aboutme__desc">
-                            A guy who loves bikes, riding in the feels, and of course, coding. At the moment, I’m learning to be a front-end web developer. <br><br>
-                            If you want to know more about me, just take a look around. Who knows? You might find that I’m worth your time.
-                            
-                        </p>
-                    </div>
-                    <div class="aboutme-info">
-                        <img class="aboutme__img" src="./images/000065.JPG" alt="">
-                    </div>
-                </div>
+      <div class="body">
+        <div class="aboutme-bg">
+          <div class="aboutme">
+            <div class="aboutme-info aboutme-color">
+              <h2 class="aboutme__title">Hi, I'm Tim</h2>
+              <p class="aboutme__desc">
+                A guy who loves bikes, riding in the feels, and of course,
+                coding. At the moment, I’m learning to be a front-end web
+                developer. <br /><br />
+                If you want to know more about me, just take a look around. Who
+                knows? You might find that I’m worth your time.
+              </p>
             </div>
-            <div id="mywork" class="mywork">
-                <h2 class="mywork__title" data-aos="flip-down">My Work</h2>
-                <div class="work">
-                    <div class="work-card" data-aos="fade-left">
-                        <div class="work-card-info">
-                            <p class="work-card__title">Trekking</p>
-                            <p class="work-card__desc">This is a website selling trekking gears and apparels <br>for those who love challenging themselves. A simple yet functional design.</p>
-                        </div>
-                        <div class="work-card-img">
-                            <a href="./trek.html" target="_blank"><img class="work-card__img" src="./images/trek.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="work-card" data-aos="fade-right">
-                        <div class="work-card-info">
-                            <p class="work-card__title">The Kids PlayGround</p>
-                            <p class="work-card__desc">If you are in the kid business, this is what you need. <br>A colorful and eye-catching site that will surely attract youngsters.</p>
-                        </div>
-                        <div class="work-card-img">
-                            <a href="./play.html" target="_blank"><img class="work-card__img" src="./images/play.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="work-card" data-aos="fade-left">
-                        <div class="work-card-info">
-                            <p class="work-card__title">The Naturalist</p>
-                            <p class="work-card__desc">A site aims at serving environmentalists and those who love nature. <br>Its design is quite simple with pastel and light colors.</p>
-                        </div>
-                        <div class="work-card-img">
-                            <a href="./nature.html" target="_blank"><img class="work-card__img" src="./images/nature.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="aboutme-info">
+              <img class="aboutme__img" src="./images/000065.JPG" alt="" />
             </div>
+          </div>
         </div>
-        <footer data-aos="slide-down">
-            <div class="foot">
-                <div class="contact">
-                    <div class="contact-info">
-                        <h3 class="contact-info_title">You can contact me via:</h3>
-                        <p class="contact-info_address"></p>
-                        <p class="contact-info_no">Tel: +8497-165-2548</p>
-                        <p class="contact-info_mail">Email: thinhpt.sp@gmail.com</p>
-                    </div>
-                    <div class="contact-me">
-                        <h3 class="contact-me_call">Leave me a message.</h3>
-                        <button class="contact-me_btn">
-                            <a class="contact-me_link" href="./contact.html">Click Here</a>
-                        </button>
-                        <ul class="contact-social">
-                            <li><a class="contact-social_link" onclick="alert('Oops, this is currently not available!')" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="contact-social_link" onclick="alert('Oops, this is currently not available!')" href=""><i class="fa fa-youtube"></i></a></li>
-                            <li><a class="contact-social_link" onclick="alert('Oops, this is currently not available!')" href=""><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+        <div id="mywork" class="mywork">
+          <h2 class="mywork__title" data-aos="flip-down">My Work</h2>
+          <div class="work">
+            <div class="work-card" data-aos="fade-left">
+              <div class="work-card-info">
+                <p class="work-card__title">Trekking</p>
+                <p class="work-card__desc">
+                  This is a website selling trekking gears and apparels
+                  <br />for those who love challenging themselves. A simple yet
+                  functional design.
+                </p>
+              </div>
+              <div class="work-card-img">
+                <a href="./trek.html"
+                  ><img class="work-card__img" src="./images/trek.jpg" alt=""
+                /></a>
+              </div>
             </div>
-            <div class="copyright">
-                <p>© 2021 by Tim Fung</p>
+            <div class="work-card" data-aos="fade-right">
+              <div class="work-card-info">
+                <p class="work-card__title">The Kids PlayGround</p>
+                <p class="work-card__desc">
+                  If you are in the kid business, this is what you need. <br />A
+                  colorful and eye-catching site that will surely attract
+                  youngsters.
+                </p>
+              </div>
+              <div class="work-card-img">
+                <a href="./play.html"
+                  ><img class="work-card__img" src="./images/play.jpg" alt=""
+                /></a>
+              </div>
             </div>
-        </footer>
+            <div class="work-card" data-aos="fade-left">
+              <div class="work-card-info">
+                <p class="work-card__title">The Naturalist</p>
+                <p class="work-card__desc">
+                  A site aims at serving environmentalists and those who love
+                  nature. <br />Its design is quite simple with pastel and light
+                  colors.
+                </p>
+              </div>
+              <div class="work-card-img">
+                <a href="./nature.html"
+                  ><img class="work-card__img" src="./images/nature.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="work-card" data-aos="fade-right">
+              <div class="work-card-info">
+                <p class="work-card__title">Octavian 1</p>
+                <p class="work-card__desc">
+                  One of my cloned sites. <br />I recoded it with my own codes
+                  using the available PSD file online.
+                </p>
+              </div>
+              <div class="work-card-img">
+                <a href="./octa1.html"
+                  ><img class="work-card__img" src="./images/octa1.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="work-card" data-aos="fade-left">
+              <div class="work-card-info">
+                <p class="work-card__title">Octavian 2</p>
+                <p class="work-card__desc">
+                  The second one of cloned sites. <br />
+                </p>
+              </div>
+              <div class="work-card-img">
+                <a href="./octa2.html"
+                  ><img class="work-card__img" src="./images/octa2.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="work-card" data-aos="fade-right">
+              <div class="work-card-info">
+                <p class="work-card__title">Yamaha FZ6N</p>
+                <p class="work-card__desc">
+                  This is a promo site for the Yamaha FZ6N.
+                  <br />I designed it using the basis of the official Yamaha
+                  Motor site and online sources.
+                </p>
+              </div>
+              <div class="work-card-img">
+                <a href="./fz6.html"
+                  ><img class="work-card__img" src="./images/fz6.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer data-aos="slide-down">
+        <div class="foot">
+          <div class="contact">
+            <div class="contact-info">
+              <h3 class="contact-info_title">You can contact me via:</h3>
+              <p class="contact-info_address"></p>
+              <p class="contact-info_no">Tel: +8497-165-2548</p>
+              <p class="contact-info_mail">Email: thinhpt.sp@gmail.com</p>
+            </div>
+            <div class="contact-me">
+              <h3 class="contact-me_call">Leave me a message.</h3>
+              <button class="contact-me_btn">
+                <a class="contact-me_link" href="./contact.html">Click Here</a>
+              </button>
+              <ul class="contact-social">
+                <li>
+                  <a
+                    class="contact-social_link"
+                    onclick="alert('Oops, this is currently not available!')"
+                    href="#"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="contact-social_link"
+                    onclick="alert('Oops, this is currently not available!')"
+                    href=""
+                    ><i class="fa fa-youtube"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="contact-social_link"
+                    onclick="alert('Oops, this is currently not available!')"
+                    href=""
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>© 2021 by Tim Fung</p>
+        </div>
+      </footer>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
-</body>
+  </body>
 </html>

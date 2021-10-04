@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubunbu", sans-serif;
+}
+
+:root {
+  --black: #2f2f2f;
+  --white: #fff;
+  --bg-color: #333;
+  --btn-hover: rgb(224, 116, 116);
+}
+
+.main {
+  position: relative;
+  min-height: 100vh;
+  padding: 30px 100px;
+  background: linear-gradient(#1c1c1c, #fff);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.main:before {
+  content: "FAZER 6";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 23vw;
+  font-weight: 700;
+  width: 100%;
+  margin: 0 auto;
+  color: rgba(224, 224, 224, 0.1);
+  z-index: 2;
+}
+@media screen and (max-width: 1279px) {
+  .main {
+    padding: 30px 70px;
+  }
+}
+
+.nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 30px 100px;
+  z-index: 10;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  transition: 0.25s ease;
+}
+.nav-link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1.5px red;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+.nav-link:hover:after {
+  transform: scaleX(1);
+}
+.nav-img {
+  max-width: 50px;
+  max-height: 50px;
+}
+.nav-img:hover {
+  cursor: pointer;
+}
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  display: none;
+  background: url("/images/fz6/menu-bar.png") center no-repeat;
+  background-size: 40px;
+  transition: 0.2s ease;
+}
+@media screen and (max-width: 1279px) {
+  .nav {
+    padding: 30px 70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    padding: 20px 30px;
+  }
+  .nav-bar {
+    position: absolute;
+    background-color: rgba(180, 176, 176, 0.95);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    font-size: 40px;
+    transition: 0.25s linear;
+    transform: translateX(100%);
+  }
+  .nav-bar.is-active {
+    transform: translateX(0);
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-link {
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 700;
+    transition: 0.3s ease;
+  }
+  .nav-link::after {
+    border-bottom: none;
+  }
+  .nav-link:hover {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+  }
+  .nav-icon {
+    display: block;
+  }
+  .nav-icon.is-active {
+    position: relative;
+    z-index: 99;
+    background: url("/images/fz6/closebtn.png");
+    background-size: 40px;
+    border-radius: 5px;
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.product h1 {
+  position: relative;
+  font-size: 52px;
+  color: rgba(224, 224, 224, 0.5);
+  margin-bottom: 10px;
+  font-weight: 400;
+  z-index: 2;
+}
+.product span {
+  color: white;
+  font-weight: 800;
+}
+.product img {
+  max-width: 50%;
+  background-color: transparent;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.product-link {
+  position: relative;
+  padding: 10px 15px;
+  background-color: #b4b0b0;
+  color: var(--black);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: 0.25s ease;
+  z-index: 2;
+}
+.product-link:hover {
+  cursor: pointer;
+  letter-spacing: 4px;
+  background-color: #e07474;
+  color: white;
+}
+@media screen and (max-width: 1279px) {
+  .product {
+    margin-top: 40px;
+  }
+  .product img {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .product {
+    padding: 0;
+  }
+  .product h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .product img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 419px) {
+  .product {
+    margin-top: 25px;
+  }
+
+  .product h1 {
+    margin-top: 30px;
+  }
+}
+
+.social {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 100px;
+  align-items: center;
+  z-index: 2;
+}
+.social-main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.social-sites {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social-link {
+  font-size: 20px;
+  color: black;
+  transition: 0.25s ease;
+}
+.social-link:hover {
+  color: #e07474;
+}
+@media screen and (max-width: 1279px) {
+  .social {
+    padding: 30px 70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .social {
+    padding: 20px 30px;
+  }
+}
+
+.sliders {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.sliders-dot {
+  color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(51, 51, 51, 0.3);
+}
+.sliders-dot:hover {
+  cursor: pointer;
+}
+.sliders-dot.active {
+  background-color: #333333;
+}
+
+.slides-item {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 2;
+  padding: 0 100px;
+  transition: 0.3s ease;
+  opacity: 0;
+}
+.slides-item.active {
+  top: 50%;
+  opacity: 1;
+}
+.slides-item h2 {
+  font-size: 50px;
+  background: linear-gradient(
+    to right,
+    rgba(228, 208, 208, 0),
+    rgba(78, 78, 80, 0.2)
+  );
+}
+.slides-item h2 span {
+  font-size: 30px;
+  color: var(--white);
+  background: linear-gradient(
+    to left,
+    rgba(78, 78, 80, 0),
+    rgba(228, 208, 208, 0.2)
+  );
+}
+.slides-item h2:last-child {
+  text-align: end;
+}
+@media screen and (max-width: 1279px) {
+  .slides-item {
+    padding: 0 50px;
+  }
+  .slides-item h2 {
+    font-size: 35px;
+  }
+  .slides-item h2 span {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .slides-item {
+    top: 90%;
+  }
+  .slides-item.active {
+    top: 85%;
+  }
+  .slides-item h2 {
+    font-size: 30px;
+  }
+  .slides-item h2 span {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slides-item img {
+    max-width: 130%;
+  }
+}
+@media screen and (max-width: 419px) {
+  .slides-item {
+    padding: 0 30px;
+  }
+  .slides-item.active {
+    top: 75%;
+  }
+  .slides-item h2 {
+    font-size: 25px;
+  }
+  .slides-item h2 span {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=slider.css.map */

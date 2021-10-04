@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubunbu", sans-serif;
+}
+
+:root {
+  --black: #2f2f2f;
+  --white: #fff;
+  --bg-color: #333;
+  --btn-hover: rgb(224, 116, 116);
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  position: relative;
+  min-height: 70vh;
+  padding: 30px 100px;
+  background: linear-gradient(#1c1c1c, #fff);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/images/fz6/fz6-tail.jpg");
+  background-size: cover;
+  opacity: 0.9;
+}
+@media screen and (max-width: 1279px) {
+  .main {
+    padding: 30px 70px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .main {
+    padding: 10px 40px;
+  }
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 100px;
+  z-index: 10;
+  background-color: black;
+  transition: 0.3s linear;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: 0.25s ease;
+  font-weight: 600;
+}
+.nav-link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1.5px red;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+.nav-link:hover:after {
+  transform: scaleX(1);
+}
+.nav-img {
+  max-width: 50px;
+  max-height: 50px;
+  transition: 0.3s linear;
+}
+.nav-img:hover {
+  cursor: pointer;
+}
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  display: none;
+  background: url("/images/fz6/menu-bar.png") center no-repeat;
+  background-size: 40px;
+  transition: 0.2s ease;
+}
+@media screen and (max-width: 767px) {
+  .nav-bar {
+    position: absolute;
+    background-color: rgba(189, 184, 184, 0.95);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    font-size: 40px;
+    transition: 0.25s linear;
+    transform: translateX(100%);
+  }
+  .nav-bar.is-active {
+    transform: translateX(0);
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-link {
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 700;
+    transition: 0.3s ease;
+  }
+  .nav-link:hover {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+  }
+  .nav-link:hover:after {
+    display: none;
+  }
+  .nav-icon {
+    display: block;
+  }
+  .nav-icon.is-active {
+    position: relative;
+    z-index: 99;
+    background: url("/images/fz6/closebtn.png");
+    background-size: 40px;
+    border-radius: 5px;
+    transform: rotateZ(360deg);
+  }
+}
+
+.contact {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0 200px;
+  margin-top: 100px;
+  gap: 20px;
+  line-height: 1.6;
+}
+.contact h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.contact p {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.contact-item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  width: 100%;
+  gap: 15px;
+}
+.contact-item:not(:last-child) {
+  border-bottom: 1px double white;
+}
+.contact-item:nth-child(n + 4) .contact-item_main {
+  padding-bottom: 20px;
+}
+.contact-item_main {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+.contact-item_main li {
+  list-style: none;
+  max-width: 170px;
+}
+.contact-item_main a {
+  display: inline;
+  color: white;
+  border-bottom: 1px solid black;
+  transition: 0.4s;
+  text-decoration: none;
+}
+.contact-item_main a:hover {
+  border-bottom: 1px solid white;
+}
+.contact-item_main i {
+  font-size: 15px;
+}
+@media screen and (max-width: 1279px) {
+  .contact {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-item_main {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  background: white;
+  justify-content: space-between;
+  width: 100%;
+  color: black;
+  gap: 30px;
+  padding: 0 100px;
+}
+@media screen and (max-width: 1279px) {
+  .footer {
+    padding: 0 70px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .footer {
+    flex-direction: column;
+    padding: 0 40px;
+  }
+}
+
+.links {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 0;
+}
+.links-main {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.links-title {
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 4px double black;
+  border-style: none none double none;
+  border-color: black;
+  width: 100%;
+}
+.links-item li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.links-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+.links-item a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1.5px red;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+.links-item a:hover:after {
+  transform: scaleX(1);
+}
+.links-social {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.links p {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.links ion-icon {
+  transition: 0.3s ease-in-out;
+}
+.links ion-icon:hover {
+  transform: translateY(-6px);
+}
+.links img {
+  filter: invert(1);
+}
+.links img:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 539px) {
+  .links {
+    gap: 30px;
+  }
+  .links-main {
+    flex-flow: column wrap;
+    align-items: flex-start;
+  }
+}
+
+.copyright {
+  color: white;
+  padding: 20px 100px;
+  width: 100%;
+  text-align: center;
+}
+.copyright p {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+@media screen and (max-width: 1279px) {
+  .copyright {
+    padding: 30px 70px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .copyright {
+    padding: 10px 40px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
