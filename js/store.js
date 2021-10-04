@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", function () {
     ) {
       document.getElementById("nav-img").style.filter = "invert(0)";
       document.getElementById("nav-img").style.maxWidth = "100px";
-      document.getElementById("nav-img").src = "images/fz6/revs.png";
+      document.getElementById("nav-img").src = "images/FZ6/revs.png";
       document.getElementById("nav-bar").style.backgroundColor =
         "rgba(255,255,255, 1)";
       document.getElementById("nav-bar").style.padding = "10px 100px";
@@ -64,7 +64,7 @@ window.addEventListener("DOMContentLoaded", function () {
       }
     } else {
       document.getElementById("nav-img").style.filter = "invert(1)";
-      document.getElementById("nav-img").src = "images/fz6/ymhicon.png";
+      document.getElementById("nav-img").src = "images/FZ6/ymhicon.png";
       document.getElementById("nav-bar").style.backgroundColor =
         "rgb(255,255,255, 0.5)";
       document.getElementById("nav-bar").style.padding = "20px 100px";
