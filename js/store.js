@@ -58,7 +58,7 @@ window.addEventListener("DOMContentLoaded", function () {
       document.getElementById("nav-bar").style.padding = "10px 100px";
 
       if (window.innerWidth < 1280) {
-        document.getElementById("nav-bar").style.padding = "30px 70px";
+        document.getElementById("nav-bar").style.padding = "30px 40px";
       } else if (window.innerWidth < 540) {
         document.getElementById("nav-bar").style.padding = "20px 40px";
       }
@@ -70,7 +70,7 @@ window.addEventListener("DOMContentLoaded", function () {
       document.getElementById("nav-bar").style.padding = "20px 100px";
 
       if (window.innerWidth < 1280) {
-        document.getElementById("nav-bar").style.padding = "20px 70px";
+        document.getElementById("nav-bar").style.padding = "20px 40px";
       } else if (window.innerWidth < 540) {
         document.getElementById("nav-bar").style.padding = "10px 40px";
       }

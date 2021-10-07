@@ -94,6 +94,9 @@ body {
   transition: 0.2s ease;
 }
 @media screen and (max-width: 767px) {
+  .nav {
+    padding: 20px 40px;
+  }
   .nav-bar {
     position: absolute;
     background-color: rgba(189, 184, 184, 0.95);

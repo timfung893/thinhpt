@@ -18,7 +18,7 @@ body {
 
 .main {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 30px 100px;
   background: black;
   display: flex;
@@ -128,6 +128,9 @@ body {
   transition: 0.2s ease;
 }
 @media screen and (max-width: 767px) {
+  .nav {
+    padding: 20px 40px;
+  }
   .nav-bar {
     position: absolute;
     background-color: rgba(189, 184, 184, 0.95);
@@ -250,6 +253,7 @@ body {
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
+  cursor: zoom-in;
 }
 .slider-item {
   width: 100%;
@@ -257,6 +261,47 @@ body {
   flex: 1 0 100%;
   user-select: none;
 }
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.lightbox-content {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox-content ion-icon {
+  position: relative;
+  z-index: 99;
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s ease-in-out;
+}
+.lightbox-content ion-icon:hover {
+  opacity: 1;
+}
+.lightbox-content img {
+  border-radius: 4px;
+  object-fit: cover;
+  width: 1082px;
+  height: 650px;
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 1365px) {
   .slider {
     max-width: 900px;
@@ -266,10 +311,35 @@ body {
   .slider {
     max-width: 700px;
   }
+
+  .lightbox-content {
+    max-width: 90%;
+  }
+  .lightbox-content img {
+    max-width: 90%;
+    height: 600px;
+  }
 }
+
 @media screen and (max-width: 767px) {
   .slider {
     max-width: 500px;
+  }
+
+  .slider-main img {
+    object-fit: contain;
+  }
+
+  .lightbox-content img {
+    object-fit: contain;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .lightbox-content img {
+    object-fit: contain;
+    height: 300px;
   }
 }
 
