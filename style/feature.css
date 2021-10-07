@@ -96,6 +96,9 @@ body {
   filter: invert(1);
 }
 @media screen and (max-width: 767px) {
+  .nav {
+    padding: 20px 40px;
+  }
   .nav-bar {
     position: absolute;
     background-color: rgba(189, 184, 184, 0.95);
@@ -199,6 +202,12 @@ body {
 .specs-item {
   display: flex;
   flex-direction: column;
+}
+.specs-item_type {
+  text-align: left;
+}
+.specs-item_value {
+  text-align: right;
 }
 .specs-item_type,
 .specs-item_value {

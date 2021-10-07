@@ -67,17 +67,19 @@ header {
   position: relative;
   width: 60px;
   height: 60px;
-  background-image: url('../images/menu-icon.jpg');
+  background-image: url("../images/menu-icon.jpg");
   background-repeat: no-repeat;
   background-size: 50px;
   background-position: center;
   cursor: pointer;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(601%) hue-rotate(135deg) brightness(111%) contrast(88%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(601%)
+    hue-rotate(135deg) brightness(111%) contrast(88%);
   z-index: 1000;
 }
 .toggle.active {
-  background-image: url('../images/closepng.png');
-  filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(601%) hue-rotate(135deg) brightness(111%) contrast(88%);
+  background-image: url("../images/closepng.png");
+  filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(601%)
+    hue-rotate(135deg) brightness(111%) contrast(88%);
   background-repeat: no-repeat;
   background-size: 50px;
   background-position: center;
@@ -215,13 +217,14 @@ header {
 .scroll-icon {
   color: #747373;
 }
-.scroll-icon:hover {
+.scroll-icon:hover,
+.scroll-icon:active {
   color: white;
   cursor: pointer;
 }
 
 .bg-body {
-  background-image: url('../images/bg7.jpg');
+  background-image: url("../images/bg7.jpg");
   background-size: cover;
   border-top: 5px solid rgba(82, 119, 158, 0.5);
 }
@@ -320,7 +323,8 @@ header {
   font-weight: 300;
   color: white;
 }
-.work-card__title, .work-card__desc {
+.work-card__title,
+.work-card__desc {
   padding: 1rem;
   border-radius: 10px;
 }
@@ -351,7 +355,8 @@ header {
   grid-template-columns: 1fr 1fr;
   color: white;
 }
-.contact-info, .contact-me {
+.contact-info,
+.contact-me {
   padding: 1rem 0;
   font-size: 1rem;
   text-align: center;
@@ -365,11 +370,13 @@ header {
   background-color: rgba(1, 92, 134, 0.5);
   border-right: 2px solid black;
 }
-.contact-info::after, .contact-info::before {
+.contact-info::after,
+.contact-info::before {
   content: "";
   display: table;
 }
-.contact-info_no, .contact-info_mail {
+.contact-info_no,
+.contact-info_mail {
   margin-bottom: 0.2em;
 }
 .contact-me {
@@ -498,7 +505,8 @@ header {
   .work-card__title {
     margin-bottom: 0.4rem;
   }
-  .work-card__title, .work-card__desc {
+  .work-card__title,
+  .work-card__desc {
     width: 100%;
   }
   .work-card-info {
@@ -560,7 +568,8 @@ header {
   .work-card__desc {
     font-size: 0.8rem;
   }
-  .work-card__title, .work-card__desc {
+  .work-card__title,
+  .work-card__desc {
     width: 100%;
   }
 }
