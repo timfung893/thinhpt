@@ -15,7 +15,8 @@ header {
   background-size: cover;
 }
 
-.nav-res, .toggle {
+.nav-res,
+.toggle {
   display: none;
 }
 
@@ -71,7 +72,8 @@ header {
   display: none;
   width: 40px;
   height: 40px;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(601%) hue-rotate(135deg) brightness(111%) contrast(88%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(601%)
+    hue-rotate(135deg) brightness(111%) contrast(88%);
 }
 
 .logo {
@@ -140,7 +142,8 @@ header {
   height: 25rem;
   text-align: center;
 }
-.expert::before, .expert::after {
+.expert::before,
+.expert::after {
   content: "";
   display: table;
   clear: both;
@@ -255,7 +258,8 @@ header {
   grid-template-columns: 1fr 1fr;
   color: white;
 }
-.contact-info, .contact-me {
+.contact-info,
+.contact-me {
   padding: 1rem 0;
   font-size: 1rem;
   text-align: center;
@@ -273,7 +277,9 @@ header {
 .contact-info_no {
   padding: 5px;
 }
-.contact-info_no, .contact-info_mail, .contact-info_title {
+.contact-info_no,
+.contact-info_mail,
+.contact-info_title {
   margin-bottom: 0.2em;
 }
 .contact-me {
@@ -369,6 +375,9 @@ header {
 
   .expert-desc {
     bottom: -20%;
+    display: flex;
+    bottom: -20%;
+    align-items: center;
   }
 }
 @media screen and (max-width: 810px) {
@@ -415,12 +424,14 @@ header {
     background-size: 50px;
     background-position: center;
     cursor: pointer;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(601%) hue-rotate(135deg) brightness(111%) contrast(88%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(601%)
+      hue-rotate(135deg) brightness(111%) contrast(88%);
     z-index: 1000;
   }
   .toggle.active {
     background-image: url("../images/closepng.png");
-    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(601%) hue-rotate(135deg) brightness(111%) contrast(88%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(601%)
+      hue-rotate(135deg) brightness(111%) contrast(88%);
     background-repeat: no-repeat;
     background-size: 50px;
     background-position: center;
@@ -514,7 +525,7 @@ header {
   }
 
   .expert-title,
-.exp-title {
+  .exp-title {
     font-size: 2.5rem;
   }
 }
