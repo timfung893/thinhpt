@@ -177,6 +177,10 @@ body {
     max-width: 385px;
     max-height: 350px;
   }
+
+  iframe {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
