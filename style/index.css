@@ -10,6 +10,29 @@ header {
   height: 755px;
 }
 
+.bttop {
+  position: fixed;
+  display: none;
+  z-index: 99;
+  width: 35px;
+  height: 35px;
+  right: 10px;
+  top: 80%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: rgba(47, 106, 173, 0.8);
+  transition: 0.4s all ease;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.bttop:hover {
+  background: rgba(1, 92, 134, 1);
+}
+.bttop-arrow {
+  color: white;
+}
 .bg {
   position: absolute;
   right: 0;
