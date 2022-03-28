@@ -33,7 +33,6 @@ $('document').ready(() => {
     MenuOpen.addEventListener('click', function() {
         MenuOpen.classList.toggle('is-active');
         Menu.classList.toggle('is-active');
-
     })
 
 })

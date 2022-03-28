@@ -45,6 +45,7 @@ window.addEventListener("DOMContentLoaded", function () {
   window.onscroll = function () {
     scroll();
   };
+
   function scroll() {
     if (
       document.body.scrollTop > 80 ||

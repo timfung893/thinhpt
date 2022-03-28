@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="/images/ricon_ALu_icon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
@@ -95,6 +96,9 @@
 
     <section class="bg-body">
       <div class="body">
+        <button class="bttop" title="back to top">
+          <ion-icon class="bttop-arrow" name="arrow-up-outline"></ion-icon>
+        </button>
         <div class="aboutme-bg">
           <div class="aboutme">
             <div class="aboutme-info aboutme-color">
@@ -113,7 +117,7 @@
           </div>
         </div>
         <div id="mywork" class="mywork">
-          <h2 class="mywork__title" data-aos="flip-down">My Work</h2>
+          <h2 class="mywork__title" data-aos="flip-down">My Works</h2>
           <div class="work">
             <div class="work-card" data-aos="fade-left">
               <div class="work-card-info">
@@ -202,14 +206,33 @@
                 /></a>
               </div>
             </div>
+            <div class="work-card" data-aos="fade-right">
+              <div class="work-card-info">
+                <p class="work-card__title">Berserk Ecommerce</p>
+                <p class="work-card__desc">
+                  An ecommerce site selling character figures in Berserk - a
+                  renowned manga.
+                  <br />I coded it using ReactJS, Bootstrap, Firebase, and above
+                  all, passion.
+                </p>
+              </div>
+              <div class="work-card-img">
+                <a href="https://timfung893.github.io/berserk" target="_blank"
+                  ><img
+                    class="work-card__img"
+                    src="./images/berserk.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <footer data-aos="slide-down">
+      <footer>
         <div class="foot">
           <div class="contact">
             <div class="contact-info">
-              <h3 class="contact-info_title">You can contact me via:</h3>
+              <h3 class="contact-info_title">Contact me via:</h3>
               <p class="contact-info_address"></p>
               <p class="contact-info_no">Tel: +8497-165-2548</p>
               <p class="contact-info_mail">Email: thinhpt.sp@gmail.com</p>
@@ -253,6 +276,14 @@
         </div>
       </footer>
     </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
   </body>
