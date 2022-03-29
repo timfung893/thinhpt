@@ -170,6 +170,7 @@ header {
   font-size: 2.5em;
   list-style: none;
   margin-right: 10px;
+  max-width: 140px;
 }
 .social-link {
   color: white;
@@ -179,6 +180,11 @@ header {
 }
 .social-link:hover {
   transform: scale(0.5) translateY(-10px);
+}
+.download-cv {
+  text-decoration: none;
+  font-size: 2rem;
+  width: 100%;
 }
 
 .menu {
