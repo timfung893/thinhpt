@@ -29,9 +29,13 @@ $(document).ready(() => {
       document.body.scrollTop > 60 ||
       document.documentElement.scrollTop > 60
     ) {
-      $(".bttop").css("display", "block");
+      window.setTimeout(() => {
+        $(".bttop").css("display", "block");
+      }, 300);
     } else {
-      $(".bttop").css("display", "none");
+      window.setTimeout(() => {
+        $(".bttop").css("display", "none");
+      }, 300);
     }
   }
 

@@ -4,12 +4,10 @@
   margin: 0;
   padding: 0;
 }
-
 header {
   position: relative;
   height: 755px;
 }
-
 .bttop {
   position: fixed;
   display: none;
@@ -25,8 +23,8 @@ header {
   transition: 0.4s all ease;
   font-size: 19px;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
-
 .bttop:hover {
   background: rgba(1, 92, 134, 1);
 }
@@ -85,7 +83,6 @@ header {
   padding: 10px 20px;
   letter-spacing: 6px;
 }
-
 .toggle {
   position: relative;
   width: 60px;
@@ -117,7 +114,6 @@ header {
   background: #507586;
   mix-blend-mode: overlay;
 }
-
 .motto {
   position: absolute;
   z-index: 10;
@@ -157,7 +153,6 @@ header {
   padding: 10px 30px;
   letter-spacing: 6px;
 }
-
 .social {
   position: absolute;
   bottom: 20px;
@@ -186,7 +181,6 @@ header {
   font-size: 2rem;
   width: 100%;
 }
-
 .menu {
   position: absolute;
   top: 0;
@@ -232,7 +226,6 @@ header {
   color: #84972f;
   mix-blend-mode: difference;
 }
-
 .scroll {
   position: absolute;
   background: transparent;
