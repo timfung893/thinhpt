@@ -6,7 +6,7 @@
 }
 header {
   position: relative;
-  height: 755px;
+  height: 100vh;
 }
 .bttop {
   position: fixed;
