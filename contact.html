@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="/images/ricon_ALu_icon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
@@ -88,11 +89,12 @@
         </div>
         <div class="contact-section" data-aos="fade-right">
           <div class="contact-form">
-            <div class="form">
+            <form class="form" id="contact-form">
+              <input type="hidden" name="contact_number">
               <div class="form-info">
                 <label class="form-title" for="first-name">First Name</label>
                 <div class="form-space">
-                  <input id="first-name" type="text" placeholder="" />
+                  <input id="first-name" name="user_name" type="text" placeholder="" />
                 </div>
               </div>
               <div class="form-info">
@@ -104,35 +106,42 @@
               <div class="form-info">
                 <label class="form-title" for="email">Email</label>
                 <div class="form-space">
-                  <input id="email" type="text" placeholder="" />
+                  <input id="email" name="user_email" type="email" placeholder="" />
                 </div>
               </div>
               <div class="form-info">
                 <label class="form-title" for="phone">Phone</label>
                 <div class="form-space">
-                  <input id="phone" type="text" placeholder="" />
+                  <input id="phone" name="phone" type="number" placeholder="" />
                 </div>
               </div>
-            </div>
-            <div class="form-message">
-              <label class="form-title" for="subject">Subject</label>
-              <div class="form-space">
-                <input id="subject" type="text" placeholder="" />
+              <div class="form-message">
+                <label class="form-title" for="subject">Subject</label>
+                <div class="form-space">
+                  <input id="subject" name="subject" type="text" placeholder="" />
+                </div>
+                <label class="form-title" for="message">Message</label>
+                <div class="form-space">
+                  <input id="message" name="message" type="text" placeholder="" />
+                </div>
               </div>
-              <label class="form-title" for="message">Message</label>
-              <div class="form-space">
-                <input id="message" type="text" placeholder="" />
-              </div>
-              <button class="submit">
-                <a
-                  class="submit-link"
-                  href=""
-                  onclick="alert('Thank you. I will reply to you asap!')"
-                  class=""
-                  >Submit</a
-                >
+              <button class="submit" 
+                type="submit"
+                value="Send"
+                onclick="alert('Thank you. I will reply to you asap!')"
+              >Submit
               </button>
-            </div>
+            </form>
+            <!-- <form id="contact-form">
+              <input type="hidden" name="contact_number">
+              <label>Name</label>
+              <input type="text" name="user_name">
+              <label>Email</label>
+              <input type="email" name="user_email">
+              <label>Message</label>
+              <textarea name="message"></textarea>
+              <input type="submit" value="Send">
+           </form> -->
           </div>
         </div>
       </section>
@@ -190,5 +199,13 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript" src="./js/contact.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("hriL6QQeLd_WDqSTD");
+      })();
+    </script>
   </body>
 </html>

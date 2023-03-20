@@ -15,4 +15,19 @@ $(document).ready(() => {
     bg.classList.toggle('active');
     navres.classList.toggle('nav-res-flex');
   });
+
+  // send email
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    this.contact_number.value = Math.random() * 100000 | 0;
+    emailjs.sendForm('service_0oecvpb', 'template_gwx08a8', this)
+      .then(function() {
+        console.log('SUCCESS!');
+        
+      }, function(error) {
+        console.log('Failed to send email', error);
+      });
+  })
+
 });

@@ -195,6 +195,7 @@ $section-title-color:rgba(117, 171, 238, 0.7);
     width: calc(calc((100% / 2) - 20px));
    
   }
+
   &-space input {
     width: 100%;
     background-color: rgba(255, 255, 255, .6);
@@ -212,6 +213,9 @@ $section-title-color:rgba(117, 171, 238, 0.7);
     &:hover {
       background-color: rgba(255, 255, 255, 1);
     }
+  }
+  &-message {
+    width: 100%;
   }
 }
 
@@ -346,7 +350,6 @@ $section-title-color:rgba(117, 171, 238, 0.7);
     padding: 0 100px;
   }
 }
-
 
 @media (max-width: 991px) {
 

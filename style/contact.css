@@ -107,7 +107,7 @@ header {
   padding: 1rem;
 }
 .aboutme-info {
-  width: calc(calc(100% / 2) - 20px);
+  width: calc(50% - 20px);
   margin-bottom: 3rem;
 }
 .aboutme__title {
@@ -164,7 +164,7 @@ header {
   font-weight: 500;
 }
 .form-info {
-  width: calc(calc((100% / 2) - 20px));
+  width: calc(50% - 20px);
 }
 .form-space input {
   width: 100%;
@@ -180,11 +180,14 @@ header {
   padding-bottom: 2rem;
 }
 .form-space input:hover {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+}
+.form-message {
+  width: 100%;
 }
 
 .submit {
-  background-color: #19678b;
+  background-color: rgb(25, 103, 139);
   border-radius: 5px;
   padding: 0.5rem;
   outline: none;
@@ -193,10 +196,10 @@ header {
 }
 .submit-link {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .submit:hover {
-  background-color: #57b8d6;
+  background-color: rgb(87, 184, 214);
 }
 
 .contact {
@@ -278,7 +281,7 @@ header {
 }
 
 .copyright {
-  background-color: #101113;
+  background-color: rgb(16, 17, 19);
   color: white;
   padding: 1rem;
   text-align: center;
@@ -317,15 +320,12 @@ header {
   .nav-nav {
     padding: 30px 80px;
   }
-
   .getintouch {
     padding: 0 80px;
   }
-
   .aboutme__img {
     width: 80%;
   }
-
   .contact-section {
     padding: 0 80px;
   }
@@ -334,15 +334,12 @@ header {
   .nav-menu {
     display: none;
   }
-
   .toggle {
     display: block;
   }
-
   .nav.active {
     right: 300px;
   }
-
   .toggle {
     position: relative;
     width: 60px;
@@ -362,7 +359,6 @@ header {
     background-size: 50px;
     background-position: center;
   }
-
   .nav-res {
     position: absolute;
     top: 0;
@@ -420,9 +416,8 @@ header {
     color: rgba(255, 255, 255, 0.9);
   }
   .nav-res_link:hover {
-    color: white;
+    color: rgb(255, 255, 255);
   }
-
   .contact-section {
     padding: 0;
   }
@@ -431,11 +426,9 @@ header {
   .nav.active {
     right: 290px;
   }
-
   .nav-res {
     width: 290px;
   }
-
   .contact {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
@@ -454,7 +447,6 @@ header {
   .nav.active {
     right: 250px;
   }
-
   .nav-res {
     width: 250px;
   }
@@ -466,7 +458,6 @@ header {
   .nav-res_item::before {
     width: 25%;
   }
-
   .getintouch {
     padding: 0 40px;
     text-align: center;
@@ -476,7 +467,6 @@ header {
   .nav.active {
     right: 200px;
   }
-
   .nav-res {
     width: 200px;
   }
@@ -486,7 +476,6 @@ header {
   .nav-res_item::before {
     width: 33%;
   }
-
   .expert {
     margin: 3rem auto;
     height: 19rem;
@@ -501,7 +490,6 @@ header {
     margin: 0;
     bottom: 0%;
   }
-
   .exp-title {
     width: 15rem;
     font-size: 2.5rem;
@@ -515,14 +503,12 @@ header {
   .nav.active {
     right: 190px;
   }
-
   .nav-res {
     width: 190px;
   }
   .nav-res_item {
     width: 85px;
   }
-
   .expert-desc {
     font-size: 1.5rem;
   }
