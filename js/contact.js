@@ -21,7 +21,7 @@ $(document).ready(() => {
     e.preventDefault();
 
     this.contact_number.value = Math.random() * 100000 | 0;
-    emailjs.sendForm('service_0oecvpb', 'template_gwx08a8', this)
+    emailjs.sendForm('service_51t5vys', 'template_gwx08a8', this)
       .then(function() {
         console.log('SUCCESS!');
         
